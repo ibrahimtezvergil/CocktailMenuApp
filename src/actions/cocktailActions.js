@@ -38,7 +38,7 @@ export const getSearchCocktails = (search) => dispatch => {
         .then(res =>{
             dispatch({
                 type:'FETCHED_SEARCH_COCKTAIL',
-                payload:res.data.drinks === null ? [] : res.data.drink,
+                payload:res.data.drinks === null ? [] : res.data.drinks,
             })
         })
 }
